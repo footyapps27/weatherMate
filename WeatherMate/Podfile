@@ -1,0 +1,21 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'WeatherMate' do
+pod 'Shimmer'
+pod 'ICLoader'
+pod 'Alamofire', '~> 3.3'
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+pod 'PaperFold', :git => 'https://github.com/jasperblues/PaperFold-for-iOS.git', :tag => '1.2-no-gesture-recognizers'
+pod 'Charts'
+pod 'SlideMenuControllerSwift'
+pod 'PureLayout'
+pod 'SQLite.swift', '~> 0.10.1'
+end
+
+target 'WeatherMateTests' do
+pod 'Alamofire', '~> 3.3'
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+pod 'SQLite.swift', '~> 0.10.1'
+end
+

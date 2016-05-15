@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (3.3.1)
+  - Charts (2.2.4):
+    - Charts/Core (= 2.2.4)
+  - Charts/Core (2.2.4)
+  - ICLoader (1.0.4):
+    - NanoFrame
+  - NanoFrame (0.0.3)
+  - PaperFold (1.2)
+  - PureLayout (3.0.1)
+  - Shimmer (1.0.2)
+  - SlideMenuControllerSwift (2.1.1)
+  - SQLite.swift (0.10.1)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - Charts
+  - ICLoader
+  - PaperFold (from `https://github.com/jasperblues/PaperFold-for-iOS.git`, tag `1.2-no-gesture-recognizers`)
+  - PureLayout
+  - Shimmer
+  - SlideMenuControllerSwift
+  - SQLite.swift (~> 0.10.1)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  PaperFold:
+    :git: https://github.com/jasperblues/PaperFold-for-iOS.git
+    :tag: 1.2-no-gesture-recognizers
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  PaperFold:
+    :git: https://github.com/jasperblues/PaperFold-for-iOS.git
+    :tag: 1.2-no-gesture-recognizers
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  Charts: a9e735c83c6d376ade20f6612dcf0ba217394a49
+  ICLoader: 00592dc70b66252d58981369b42be47b668968c8
+  NanoFrame: a1dabbac9994eeea5e6289ec8201d5752a01cd21
+  PaperFold: 7ebdf11028012a3e0f3906bd455054369ff79e4a
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SlideMenuControllerSwift: 82ada9b04e03538c84d034cf1c09e5849c0113f7
+  SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 904c7faf468e2a2b695149392a357ac26aef7813
+
+COCOAPODS: 1.0.0.rc.2

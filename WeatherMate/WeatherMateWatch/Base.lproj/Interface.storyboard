@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L8Y-aN-xgW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Questrial-Regular.otf">
+            <string>Questrial-Regular</string>
+            <string>Questrial-Regular</string>
+            <string>Questrial-Regular</string>
+            <string>Questrial-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--City-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="City" id="AgC-eL-Hgc" customClass="CityController" customModule="WeatherMateWatch_Extension">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="3se-Ln-DrM">
+                            <items>
+                                <label alignment="left" verticalAlignment="bottom" text="35°C/21°C" id="QA7-lc-ZNY">
+                                    <fontDescription key="font" name="Questrial-Regular" family="Questrial" pointSize="18"/>
+                                </label>
+                                <imageView width="100" height="100" alignment="right" image="Water_Drop" id="LAj-R1-ph8">
+                                    <variation key="device=watch42mm" height="20" width="20"/>
+                                </imageView>
+                                <label alignment="right" verticalAlignment="bottom" text="65%" id="zzm-v7-g0Y">
+                                    <fontDescription key="font" name="Questrial-Regular" family="Questrial" pointSize="18"/>
+                                </label>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="QA7-lc-ZNY"/>
+                                    <exclude reference="LAj-R1-ph8"/>
+                                    <exclude reference="zzm-v7-g0Y"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="QA7-lc-ZNY"/>
+                                    <include reference="LAj-R1-ph8"/>
+                                    <include reference="zzm-v7-g0Y"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" alignment="center" id="aY2-zp-Tn9">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="London" id="s9j-kK-XyK">
+                                    <fontDescription key="font" name="Questrial-Regular" family="Questrial" pointSize="30"/>
+                                </label>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="s9j-kK-XyK"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="s9j-kK-XyK"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" height="100" alignment="center" verticalAlignment="center" spacing="10" id="HYr-JL-BnL">
+                            <items>
+                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="Water_Drop" id="c2u-2r-l15">
+                                    <variation key="device=watch42mm" height="50" width="50"/>
+                                </imageView>
+                                <label alignment="center" verticalAlignment="center" text="21°C" textAlignment="center" baselineAdjustment="alignCenters" id="F1f-Jl-bKF">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" name="Questrial-Regular" family="Questrial" pointSize="44"/>
+                                </label>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="c2u-2r-l15"/>
+                                    <exclude reference="F1f-Jl-bKF"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm" height="61">
+                                <mask key="items">
+                                    <include reference="c2u-2r-l15"/>
+                                    <include reference="F1f-Jl-bKF"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="3se-Ln-DrM"/>
+                            <exclude reference="aY2-zp-Tn9"/>
+                            <exclude reference="HYr-JL-BnL"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="3se-Ln-DrM"/>
+                            <include reference="aY2-zp-Tn9"/>
+                            <include reference="HYr-JL-BnL"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="imgTemperature" destination="c2u-2r-l15" id="cAm-50-IlC"/>
+                        <outlet property="lblCity" destination="s9j-kK-XyK" id="wcK-9H-xAY"/>
+                        <outlet property="lblHumidity" destination="zzm-v7-g0Y" id="xph-2b-V2Z"/>
+                        <outlet property="lblMaxMinTemperature" destination="QA7-lc-ZNY" id="RV6-hv-fIg"/>
+                        <outlet property="lblTemperature" destination="F1f-Jl-bKF" id="dfN-3K-Hgn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="135.12820512820514" y="275.92307692307696"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="R1i-xk-7PV">
+            <objects>
+                <controller id="L8Y-aN-xgW" customClass="InterfaceController" customModule="WeatherMateWatch_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="405.38461538461542" y="276.79487179487182"/>
+        </scene>
+    </scenes>
+</document>

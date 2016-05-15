@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Questrial-Regular.otf">
+            <string>Questrial-Regular</string>
+            <string>Questrial-Regular</string>
+        </mutableArray>
+        <mutableArray key="VarelaRound-Regular.otf">
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxs-A4-rEm" userLabel="3rdForecast" customClass="CurrentWeatherForecastView" customModule="WeatherMate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Windy" translatesAutoresizingMaskIntoConstraints="NO" id="vvM-u4-DFo">
+                    <rect key="frame" x="8" y="1" width="52" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="quK-MY-mFj"/>
+                        <constraint firstAttribute="height" constant="48" id="vhy-Si-Ruw"/>
+                    </constraints>
+                </imageView>
+                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx7-An-91u">
+                    <rect key="frame" x="68" y="4" width="250" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="9k7-qH-yyF"/>
+                        <constraint firstAttribute="width" constant="250" id="dTK-cI-6Tc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="23"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="79°C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coh-aq-tNk">
+                    <rect key="frame" x="454" y="0.0" width="60" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="ypb-gp-Fhh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Questrial-Regular" family="Questrial" pointSize="27"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thunderstorm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-XM-8FV">
+                    <rect key="frame" x="68" y="25" width="366" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="SeV-C3-jhO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="20"/>
+                    <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJD-Uk-n9K">
+                    <rect key="frame" x="522" y="0.0" width="70" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Azc-vI-kNu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Questrial-Regular" family="Questrial" pointSize="27"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.59865778960000005" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="height" constant="50" id="2rQ-Fh-Z0C"/>
+                <constraint firstAttribute="bottom" secondItem="coh-aq-tNk" secondAttribute="bottom" id="3PO-sY-Lcx"/>
+                <constraint firstItem="fx7-An-91u" firstAttribute="leading" secondItem="vvM-u4-DFo" secondAttribute="trailing" constant="8" id="6em-tK-bzE"/>
+                <constraint firstAttribute="bottom" secondItem="vJD-Uk-n9K" secondAttribute="bottom" id="9nH-93-Vig"/>
+                <constraint firstItem="fx7-An-91u" firstAttribute="top" secondItem="sxs-A4-rEm" secondAttribute="top" constant="4" id="BxW-EW-fvp"/>
+                <constraint firstItem="vJD-Uk-n9K" firstAttribute="top" secondItem="sxs-A4-rEm" secondAttribute="top" id="CQf-HC-Ufw"/>
+                <constraint firstItem="vvM-u4-DFo" firstAttribute="centerY" secondItem="sxs-A4-rEm" secondAttribute="centerY" id="DAC-nR-Bch"/>
+                <constraint firstAttribute="trailing" secondItem="vJD-Uk-n9K" secondAttribute="trailing" constant="8" id="HzC-pF-rBG"/>
+                <constraint firstItem="coh-aq-tNk" firstAttribute="top" secondItem="sxs-A4-rEm" secondAttribute="top" id="IMU-ZQ-pIG"/>
+                <constraint firstItem="vJD-Uk-n9K" firstAttribute="leading" secondItem="coh-aq-tNk" secondAttribute="trailing" constant="8" id="JdA-c7-CV6"/>
+                <constraint firstAttribute="bottom" secondItem="EPf-XM-8FV" secondAttribute="bottom" constant="4" id="UtZ-gC-CQ8"/>
+                <constraint firstItem="coh-aq-tNk" firstAttribute="leading" secondItem="EPf-XM-8FV" secondAttribute="trailing" constant="20" id="YGc-lv-VWx"/>
+                <constraint firstItem="EPf-XM-8FV" firstAttribute="top" secondItem="fx7-An-91u" secondAttribute="bottom" constant="2" id="dR1-AE-KdJ"/>
+                <constraint firstItem="vvM-u4-DFo" firstAttribute="leading" secondItem="sxs-A4-rEm" secondAttribute="leading" constant="8" id="lS7-LI-550"/>
+                <constraint firstItem="EPf-XM-8FV" firstAttribute="leading" secondItem="fx7-An-91u" secondAttribute="leading" id="mNi-Mm-I79"/>
+                <constraint firstItem="fx7-An-91u" firstAttribute="top" secondItem="sxs-A4-rEm" secondAttribute="top" id="pBT-rN-KTT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="pBT-rN-KTT"/>
+                    <exclude reference="dR1-AE-KdJ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imgVwTemperatureIcon" destination="vvM-u4-DFo" id="imr-K4-quI"/>
+                <outlet property="lblForecast" destination="EPf-XM-8FV" id="Ewb-mN-lWx"/>
+                <outlet property="lblHumidityPercentage" destination="vJD-Uk-n9K" id="mHF-BY-bvn"/>
+                <outlet property="lblMaximumTemperature" destination="coh-aq-tNk" id="4v5-QN-MrH"/>
+                <outlet property="lblTime" destination="fx7-An-91u" id="WcC-54-wMc"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Windy" width="130" height="120"/>
+    </resources>
+</document>
